@@ -1,0 +1,4 @@
+Big = w * h
+Medium = w / 2.5 * h / 2.5
+Small = w / 5 * h / 5
+Tiny = (not rounded) SMALLw / 2 * SMALLh / 2 
