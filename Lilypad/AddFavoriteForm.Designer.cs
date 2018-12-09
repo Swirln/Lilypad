@@ -109,7 +109,7 @@
             // 
             // SubmitForm
             // 
-            this.SubmitForm.Location = new System.Drawing.Point(7, 118);
+            this.SubmitForm.Location = new System.Drawing.Point(11, 118);
             this.SubmitForm.Name = "SubmitForm";
             this.SubmitForm.Size = new System.Drawing.Size(83, 23);
             this.SubmitForm.TabIndex = 8;
@@ -118,9 +118,9 @@
             // 
             // CancelForm
             // 
-            this.CancelForm.Location = new System.Drawing.Point(96, 117);
+            this.CancelForm.Location = new System.Drawing.Point(101, 118);
             this.CancelForm.Name = "CancelForm";
-            this.CancelForm.Size = new System.Drawing.Size(88, 23);
+            this.CancelForm.Size = new System.Drawing.Size(83, 23);
             this.CancelForm.TabIndex = 9;
             this.CancelForm.Text = "Cancel";
             this.CancelForm.UseVisualStyleBackColor = true;

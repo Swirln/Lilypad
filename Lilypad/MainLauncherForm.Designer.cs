@@ -46,6 +46,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.VersionPage = new System.Windows.Forms.TabPage();
             this.HostPage = new System.Windows.Forms.TabPage();
+            this.LaunchStudioButton = new System.Windows.Forms.PictureBox();
+            this.HostButton = new System.Windows.Forms.PictureBox();
             this.JoinPage = new System.Windows.Forms.TabPage();
             this.FavoriteButton = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -60,6 +62,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.CharacterButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OptionsButton)).BeginInit();
             this.FavoritePage.SuspendLayout();
+            this.HostPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LaunchStudioButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HostButton)).BeginInit();
             this.JoinPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FavoriteButton)).BeginInit();
             this.panel1.SuspendLayout();
@@ -91,7 +96,7 @@
             this.ServersButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ServersButton.BackgroundImage")));
             this.ServersButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ServersButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ServersButton.Location = new System.Drawing.Point(94, 156);
+            this.ServersButton.Location = new System.Drawing.Point(94, 158);
             this.ServersButton.Name = "ServersButton";
             this.ServersButton.Size = new System.Drawing.Size(150, 41);
             this.ServersButton.TabIndex = 6;
@@ -236,6 +241,8 @@
             // 
             // HostPage
             // 
+            this.HostPage.Controls.Add(this.LaunchStudioButton);
+            this.HostPage.Controls.Add(this.HostButton);
             this.HostPage.Location = new System.Drawing.Point(4, 22);
             this.HostPage.Name = "HostPage";
             this.HostPage.Padding = new System.Windows.Forms.Padding(3);
@@ -243,6 +250,28 @@
             this.HostPage.TabIndex = 1;
             this.HostPage.Text = "Host";
             this.HostPage.UseVisualStyleBackColor = true;
+            // 
+            // LaunchStudioButton
+            // 
+            this.LaunchStudioButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LaunchStudioButton.BackgroundImage")));
+            this.LaunchStudioButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LaunchStudioButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LaunchStudioButton.Location = new System.Drawing.Point(298, 151);
+            this.LaunchStudioButton.Name = "LaunchStudioButton";
+            this.LaunchStudioButton.Size = new System.Drawing.Size(242, 59);
+            this.LaunchStudioButton.TabIndex = 9;
+            this.LaunchStudioButton.TabStop = false;
+            // 
+            // HostButton
+            // 
+            this.HostButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HostButton.BackgroundImage")));
+            this.HostButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.HostButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.HostButton.Location = new System.Drawing.Point(78, 151);
+            this.HostButton.Name = "HostButton";
+            this.HostButton.Size = new System.Drawing.Size(197, 59);
+            this.HostButton.TabIndex = 8;
+            this.HostButton.TabStop = false;
             // 
             // JoinPage
             // 
@@ -286,6 +315,11 @@
             // ServerPortInput
             // 
             this.ServerPortInput.Location = new System.Drawing.Point(79, 41);
+            this.ServerPortInput.Maximum = new decimal(new int[] {
+            65536,
+            0,
+            0,
+            0});
             this.ServerPortInput.Name = "ServerPortInput";
             this.ServerPortInput.Size = new System.Drawing.Size(170, 20);
             this.ServerPortInput.TabIndex = 3;
@@ -351,16 +385,21 @@
             this.Controls.Add(this.AboutPage);
             this.Controls.Add(this.Jumbotron);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MainLauncherForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lilypad";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainLauncherForm_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.Jumbotron)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ServersButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CharacterButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OptionsButton)).EndInit();
             this.FavoritePage.ResumeLayout(false);
             this.FavoritePage.PerformLayout();
+            this.HostPage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.LaunchStudioButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HostButton)).EndInit();
             this.JoinPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.FavoriteButton)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -401,6 +440,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.NumericUpDown ServerPortInput;
         private System.Windows.Forms.PictureBox FavoriteButton;
+        private System.Windows.Forms.PictureBox LaunchStudioButton;
+        private System.Windows.Forms.PictureBox HostButton;
     }
 }
 

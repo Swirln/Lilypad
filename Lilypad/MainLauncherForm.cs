@@ -58,8 +58,13 @@ namespace Lilypad
             }
 
         }
+
+        // For some reason, the process doesn't close when the form closes.
+        // Actually I think I know the reason but whatever xd
+        private void MainLauncherForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
         #endregion
-
-
     }
 }

@@ -10,6 +10,6 @@ namespace Lilypad.Properties
     {
         public static string Version = "Beta";
         public static string Build = "Debug";
-        public static int Revision = 36;
+        public static int Revision = 54;
     }
 }
